@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnerCircle | Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="settings">
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">IC</div>
+      <div>
+        <h1>InnerCircle</h1>
+        <p>Private wellness space for women</p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="journal.html">Journal</a>
+      <a href="mood.html">Mood</a>
+      <a href="goals.html">Goals</a>
+      <a href="quotes.html">Quotes</a>
+      <a href="settings.html" class="active">Settings</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="single-panel">
+      <article class="panel">
+        <h2>Settings</h2>
+
+        <div class="settings-grid">
+          <div>
+            <label class="field-label" for="displayName">Display Name</label>
+            <input id="displayName" type="text" placeholder="Your name" />
+          </div>
+
+          <div>
+            <label class="field-label" for="affirmationsToggle">Daily Quotes</label>
+            <select id="affirmationsToggle">
+              <option value="on">On</option>
+              <option value="off">Off</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button id="saveSettingsBtn" class="btn btn-primary">Save Settings</button>
+          <button id="lockBtn" class="btn btn-secondary">Lock App</button>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h3>Privacy</h3>
+        <p class="subtext">
+          This project stores everything in your browser using localStorage, so your mood logs, journal entries, goals, quotes, and settings remain on this device unless you clear them.
+        </p>
+
+        <div class="button-row">
+          <button id="exportBtn" class="btn btn-secondary">Export Data</button>
+          <button id="clearDataBtn" class="btn btn-danger">Clear All Data</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>InnerCircle • Settings</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

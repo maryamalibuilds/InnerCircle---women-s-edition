@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnerCircle | Goals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="goals">
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">IC</div>
+      <div>
+        <h1>InnerCircle</h1>
+        <p>Private wellness space for women</p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="journal.html">Journal</a>
+      <a href="mood.html">Mood</a>
+      <a href="goals.html" class="active">Goals</a>
+      <a href="quotes.html">Quotes</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="single-panel">
+      <article class="panel">
+        <h2>Goals & Habits</h2>
+        <p class="subtext">Keep your priorities visible and mark progress gently.</p>
+
+        <div class="input-row">
+          <input id="goalInput" type="text" placeholder="Add a goal or habit" />
+          <button id="addGoalBtn" class="btn btn-primary">Add</button>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h3>Your Goals</h3>
+        <div id="goalList" class="stack-list"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>InnerCircle • Goals</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

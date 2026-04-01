@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnerCircle | Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="journal">
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">IC</div>
+      <div>
+        <h1>InnerCircle</h1>
+        <p>Private wellness space for women</p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="journal.html" class="active">Journal</a>
+      <a href="mood.html">Mood</a>
+      <a href="goals.html">Goals</a>
+      <a href="quotes.html">Quotes</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="single-panel">
+      <article class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Private Journal</h2>
+            <p class="subtext">Write freely. Everything stays on this device.</p>
+          </div>
+          <button id="newPromptBtn" class="btn btn-secondary">New Prompt</button>
+        </div>
+
+        <label class="field-label">Reflection Prompt</label>
+        <div id="journalPrompt" class="prompt-box">What do you need more of this week?</div>
+
+        <label class="field-label" for="journalInput">Today's Entry</label>
+        <textarea id="journalInput" rows="8" placeholder="Write here..."></textarea>
+
+        <div class="button-row">
+          <button id="saveJournalBtn" class="btn btn-primary">Save Entry</button>
+          <button id="clearJournalBtn" class="btn btn-secondary">Clear</button>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h3>Recent Entries</h3>
+        <div id="journalList" class="stack-list"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>InnerCircle • Journal</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

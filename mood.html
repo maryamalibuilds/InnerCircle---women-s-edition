@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnerCircle | Mood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="mood">
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">IC</div>
+      <div>
+        <h1>InnerCircle</h1>
+        <p>Private wellness space for women</p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="journal.html">Journal</a>
+      <a href="mood.html" class="active">Mood</a>
+      <a href="goals.html">Goals</a>
+      <a href="quotes.html">Quotes</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="single-panel">
+      <article class="panel">
+        <h2>Mood Tracker</h2>
+        <p class="subtext">Log how you feel and notice your patterns over time.</p>
+
+        <div class="mood-grid" id="moodButtons">
+          <button class="mood-btn" data-mood="Happy">Happy</button>
+          <button class="mood-btn" data-mood="Calm">Calm</button>
+          <button class="mood-btn" data-mood="Motivated">Motivated</button>
+          <button class="mood-btn" data-mood="Tired">Tired</button>
+          <button class="mood-btn" data-mood="Stressed">Stressed</button>
+          <button class="mood-btn" data-mood="Sad">Sad</button>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h3>Recent Mood History</h3>
+        <div id="moodHistory" class="stack-list"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>InnerCircle • Mood</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

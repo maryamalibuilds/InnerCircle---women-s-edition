@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnerCircle | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">IC</div>
+      <div>
+        <h1>InnerCircle</h1>
+        <p>Private wellness space for women</p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="journal.html">Journal</a>
+      <a href="mood.html">Mood</a>
+      <a href="goals.html">Goals</a>
+      <a href="quotes.html">Quotes</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section id="authScreen" class="hero-card">
+      <div class="hero-copy">
+        <p class="eyebrow">Elegant. Private. Personal.</p>
+        <h2>A calm digital space made for reflection, journaling, mood tracking, and gentle motivation.</h2>
+        <p class="subtext">
+          Your data stays in your browser on this device using local storage. Set a 4-digit PIN to keep your space private.
+        </p>
+      </div>
+
+      <div class="auth-panel">
+        <label for="pinInput">Enter 4-digit PIN</label>
+        <input id="pinInput" type="password" maxlength="4" inputmode="numeric" placeholder="••••" />
+        <button id="unlockBtn" class="btn btn-primary">Unlock</button>
+        <p class="helper">First time here? Enter any 4-digit PIN to create your private space on this device.</p>
+      </div>
+    </section>
+
+    <section id="appContent" class="hidden">
+      <section class="overview-grid">
+        <article class="stat-card">
+          <span>Current streak</span>
+          <h3 id="streakValue">0 days</h3>
+        </article>
+        <article class="stat-card">
+          <span>Journal entries</span>
+          <h3 id="entryCount">0</h3>
+        </article>
+        <article class="stat-card">
+          <span>Goals completed</span>
+          <h3 id="goalCount">0</h3>
+        </article>
+        <article class="stat-card">
+          <span>Most logged mood</span>
+          <h3 id="topMood">-</h3>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel">
+          <h3>Welcome back</h3>
+          <p id="welcomeMessage" class="subtext"></p>
+          <div class="button-row">
+            <a href="journal.html" class="btn btn-primary">Open Journal</a>
+            <a href="quotes.html" class="btn btn-secondary">View Quotes</a>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h3>Personalized insight</h3>
+          <div id="insightCard" class="soft-card"></div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>InnerCircle • A private wellness and reflection experience for women</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
