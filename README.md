@@ -6,13 +6,7 @@ A multi-page private wellness web application focused on journaling, mood tracki
 
 [![Watch Demo](https://img.youtube.com/vi/ytNeeFFwPMM/0.jpg)](https://youtu.be/ytNeeFFwPMM)
 
-## Preview
 
-![Home](home.png)
-![Journal](journal.png)
-![Mood](mood.png)
-![Quotes](quotes.png)
-![Lock Screen](lock.png)
 
 ## Features
 
@@ -53,4 +47,12 @@ All data is stored locally in the browser using `localStorage`, meaning journal 
 - User authentication system  
 - Cloud-based storage  
 - Mobile app version  
-- Notifications and reminders  
+- Notifications and reminders
+
+## Preview
+
+![Home](home.png)
+![Journal](journal.png)
+![Mood](mood.png)
+![Quotes](quotes.png)
+![Lock Screen](lock.png)
