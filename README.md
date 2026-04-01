@@ -10,6 +10,7 @@ A multi-page private wellness web application focused on journaling, mood tracki
 
 ![Home](home.png)
 ![Journal](journal.png)
+![Mood](mood.png)
 ![Quotes](quotes.png)
 ![Lock Screen](lock.png)
 
